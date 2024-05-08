@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Behaviors</title>
+    <style>
+        body {
+            /* background-image: url("https://wallpapercave.com/wp/wp2691585.jpg"); Add your background image URL */
+            /* background-image: url("https://wallpapercave.com/wp/wp8811017.png"); */
+            background-image: url("https://i.pinimg.com/564x/9c/8e/3c/9c8e3c71e997347d3f55ace679370fd9.jpg");
+            background-size: cover; /* Cover the entire container */
+            background-position: center; /* Center the image */
+          
+            color: white; /* Set default text color to white */
+            font-family: Arial, sans-serif; /* Choose a suitable font family */
+        }
+        
+        center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column; /* Center content vertically */
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid white; /* Add border bottom to table rows */
+            transition: background-color 0.3s ease; /* Smooth transition for background color change */
+        }
+
+        th {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for table headers */
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for even table rows */
+        }
+
+        tr:nth-child(odd) {
+            background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black background for odd table rows */
+        }
+
+        tr:hover {
+            background-color: rgba(255, 255, 255, 0.1); /* Lighter background color on hover */
+        }
+
+        a {
+            color: white; /* Cyan color for links */ 
+            text-decoration: none;
+            transition: color 0.3s ease; /* Smooth transition for link color change */
+        }
+
+        a:hover {
+            color: grey; /* Lighter cyan color on hover */
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>User Behaviors</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Behavior</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in results %}
+                <tr>
+                    <td><a href="/user/{{ result.user }}">{{ result.user }}</a></td>
+                    <td>{{ result.Behaviour }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </center>
+</body>
+</html>

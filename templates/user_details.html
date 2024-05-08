@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* background-image: url("https://wallpapercave.com/wp/wp2691585.jpg");  */
+            /* background-image: url("https://wallpapercave.com/wp/wp8811017.png"); */
+            background-image: url("https://i.pinimg.com/564x/9c/8e/3c/9c8e3c71e997347d3f55ace679370fd9.jpg");
+            background-size: cover; /* Cover the entire container */
+            background-position: center; /* Center the image */
+            /* background-size: cover;
+            background-position: center; */
+            color: #fff; /* Set default text color to white */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin: 150px auto;
+            /*background-color: rgba(0, 0, 0, 0.7); Semi-transparent black background*/
+            background-color:rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+        }
+        h1 {
+            /*color: #00FFFF;*/ /* Cyan color for heading */
+            color: black;
+            text-align: center;
+        }
+        .p-container {
+            margin-top: 20px; /* Adjust margin for better spacing */
+            color:gold;
+            font-size: 20px;
+            
+        }
+        p {
+            padding-left:20%;
+            margin: 10px 0; /* Adjust spacing between paragraphs */
+            color: black; /* Set text color to white */
+            font-size: 20px;
+        }
+        .attack {
+            font-weight: bold;
+            font-size: 30px;
+            color: red; /* Red color for "Attack" */
+            /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+        }
+        .normal {
+            font-weight: bold;
+            font-size: 30px;
+            color: green; /* Lime green color for "Normal" */
+            /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>User Details</h1>
+        <div class="p-container">
+            <p style="padding-left: 40%;" class="{% if user_b == 'Attack' %}attack{% else %}normal{% endif %}">
+                <strong>{{ user_b }}</strong> 
+            </p>
+            <p><strong>Employee Name:</strong> {{ user_profile.employee_name }}</p>
+            <p><strong>User:</strong> {{ user_profile.user }}</p>
+            <p><strong>Email:</strong> {{ user_profile.email }}</p>
+            <p><strong>Role:</strong> {{ user_profile.role }}</p>
+            <p><strong>Business Unit:</strong> {{ user_profile.business_unit }}</p>
+            <p><strong>Functional Unit:</strong> {{ user_profile.functional_unit }}</p>
+            <p><strong>Department:</strong> {{ user_profile.department }}</p>
+            <p><strong>Team:</strong> {{ user_profile.team }}</p>
+            <p><strong>Supervisor:</strong> {{ user_profile.supervisor }}</p>
+        </div>
+    </div>
+</body>
+</html>
+
