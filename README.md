@@ -1,1 +1,1 @@
-It is an application which detect insiders who escalate their privileges and do malicious activity in Organisations.![login](https://github.com/Shirisha-1313/Behaviour-Based-Privilege-Escalation-Detection-System/assets/106987221/1a68dda4-e148-40a3-8d5a-59e044ef5c98)
+It is an application which detect insiders who escalate their privileges and do malicious activity in Organisations.![signup](https://github.com/Shirisha-1313/Behaviour-Based-Privilege-Escalation-Detection-System/assets/106987221/56e0d35b-fc69-4543-82f9-94bf03872296)
