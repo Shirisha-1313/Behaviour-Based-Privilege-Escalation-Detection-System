@@ -1,6 +1,10 @@
 It is an application which detect insiders who escalate their privileges and do malicious activity in Organisations.
 
-When the application get opened, user needs to login in to the application
+When the application get opened, user needs to Signup for the application
+
+![image](https://github.com/Shirisha-1313/Behaviour-Based-Privilege-Escalation-Detection-System/assets/106987221/3733ccd8-fcf5-4784-81b9-3f87c3c4934e)
+
+Now, the user needs to login in to the application
 
 ![image](https://github.com/Shirisha-1313/Behaviour-Based-Privilege-Escalation-Detection-System/assets/106987221/f0f16ad2-c9ce-4e5e-81ee-cde1c5ad7d0f)
 
